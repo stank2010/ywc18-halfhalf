@@ -30,10 +30,27 @@ function Cardsub({Merd}){
 
     return(
         <Card style={{fontFamily:"IBM Plex Sans Thai",width:"100%"}} bodyStyle={{padding:"5px"}} className="hello">
-            <Row gutter={[8,8]} style={{width:"100%",height:"100%"}}>
-                <Col  xs={24} sm={24} md={8}>
+            <Row gutter={[8,8] /* [8,8] to [8,48] */} style={{width:"100%",height:"100%"}}>
+
+                <Col  xs={0} sm={0} md={8} lg={8} xl={8} >
                    <img src={Merd.coverImageId} className="polaroidImg"/>
                 </Col>
+
+                <Col  xs={24} sm={24} md={0} lg={0} xl={0} 
+                    style={
+                        {
+                            backgroundImage:`url(${Merd.coverImageId})`,
+                            height:"200px",
+                            width:"100%",
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center'
+                        }
+                    }
+                >
+                </Col>
+
+
                 <Col xs={24} sm={24} md={{offset:2,span:12}}>
                     <Meta title={
                         <Row gutter={[8,8]}>
@@ -50,18 +67,18 @@ function Cardsub({Merd}){
                         description={
                             <>
                                 <Row>
-                                    <Col style={{padding:"15"}}>
+                                    <Col style={{padding:"10px"}}>
                                         {Merd.categoryName} | {Parser(level(Merd.priceLevel))} | {Merd.addressDistrictName} {Merd.addressProvinceName}
                                     </Col>
                                 </Row>
                                 <Divider />
-                                <Row style={{paddingBottom:"15"}}>
+                                <Row style={{paddingBottom:"10px"}}>
                                     <Col>
                                         {Parser(Merd.highlightText)}
                                     </Col>
                                 </Row>
 
-                                <Row gutter={[8,0]} style={{paddingBottom:"15"}}>
+                                <Row gutter={[8,0]} style={{paddingBottom:"10px"}}>
                                     <Col>
                                         <Title level={5}>
                                             เมนูแนะนำ:
@@ -70,7 +87,7 @@ function Cardsub({Merd}){
                                     {Merd.recommendedItems.map((item)=><Col>{item}</Col>)}
                                 </Row>
 
-                                <Row gutter={[16,0]} style={{paddingBottom:"15"}}>
+                                <Row gutter={[16,0]} style={{paddingBottom:"10px"}}>
                                     {Merd.facilities.map((item)=>{
                                         if(item=="ที่จอดรถ")
                                             return <Col><Tooltip title={item}> <img src={Car} className="roundImg"  /> </Tooltip></Col>;
@@ -101,7 +118,7 @@ function ListBar({Merchants,Shop}){
                 })
             }
             <Row>
-                <Col offset={8} style={{width:"200px",fontFamily:"IBM Plex Sans Thai"}}>
+                <Col offset={7} span={10} style={{width:"100%",fontFamily:"IBM Plex Sans Thai",marginTop:"20px",borderRadius:"5px"}}>
                     <Button  size="large" block>ดูเพิ่มเติม</Button>
                 </Col>
             </Row>
