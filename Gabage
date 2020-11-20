@@ -1,0 +1,98 @@
+<Input.Group size="large">
+<Row gutter={8}>
+  <Col span={5}>
+    <Input defaultValue="0571" />
+  </Col>
+  <Col span={8}>
+    <Input defaultValue="26888888" />
+  </Col>
+</Row>
+</Input.Group>
+<br />
+<Input.Group compact>
+<Input style={{ width: '20%' }} defaultValue="0571" />
+<Input style={{ width: '30%' }} defaultValue="26888888" />
+</Input.Group>
+<br />
+<Input.Group compact>
+<Select defaultValue="Zhejiang">
+  <Option value="Zhejiang">Zhejiang</Option>
+  <Option value="Jiangsu">Jiangsu</Option>
+</Select>
+<Input style={{ width: '50%' }} defaultValue="Xihu District, Hangzhou" />
+</Input.Group>
+<br />
+<Input.Group compact>
+<Input.Search style={{ width: '40%' }} defaultValue="0571" />
+<Input.Search allowClear style={{ width: '40%' }} defaultValue="26888888" />
+</Input.Group>
+<br />
+<Input.Group compact>
+<Input.Search allowClear style={{ width: '40%' }} defaultValue="0571" />
+<Input.Search allowClear style={{ width: '40%' }} defaultValue="26888888" />
+</Input.Group>
+<br />
+<Input.Group compact>
+<Select defaultValue="Option1">
+  <Option value="Option1">Option1</Option>
+  <Option value="Option2">Option2</Option>
+</Select>
+<Input style={{ width: '50%' }} defaultValue="input content" />
+<InputNumber />
+</Input.Group>
+<br />
+<Input.Group compact>
+<Input style={{ width: '50%' }} defaultValue="input content" />
+<DatePicker style={{ width: '50%' }} />
+</Input.Group>
+<br />
+<Input.Group compact>
+<Input style={{ width: '30%' }} defaultValue="input content" />
+<DatePicker.RangePicker style={{ width: '70%' }} />
+</Input.Group>
+<br />
+<Input.Group compact>
+<Select defaultValue="Option1-1">
+  <Option value="Option1-1">Option1-1</Option>
+  <Option value="Option1-2">Option1-2</Option>
+</Select>
+<Select defaultValue="Option2-2">
+  <Option value="Option2-1">Option2-1</Option>
+  <Option value="Option2-2">Option2-2</Option>
+</Select>
+</Input.Group>
+<br />
+<Input.Group compact>
+<Select defaultValue="1">
+  <Option value="1">Between</Option>
+  <Option value="2">Except</Option>
+</Select>
+<Input style={{ width: 100, textAlign: 'center' }} placeholder="Minimum" />
+<Input
+  className="site-input-split"
+  style={{
+    width: 30,
+    borderLeft: 0,
+    borderRight: 0,
+    pointerEvents: 'none',
+  }}
+  placeholder="~"
+  disabled
+/>
+<Input
+  className="site-input-right"
+  style={{
+    width: 100,
+    textAlign: 'center',
+  }}
+  placeholder="Maximum"
+/>
+</Input.Group>
+<br />
+
+
+
+<svg width="20" height="30" viewBox="0 0 25 30" fill="none" style="margin-right: 6px;"><path d="M9 22l-.371.335.371.411.371-.41L9 22zm0 0l.371.335h0l.002-.002.004-.005.016-.017a4.45 4.45 0 00.02-.023l.04-.045c.053-.06.13-.147.227-.26a46.982 46.982 0 003.235-4.235c.884-1.31 1.776-2.797 2.448-4.297C16.032 11.957 16.5 10.413 16.5 9c0-4.146-3.354-7.5-7.5-7.5A7.495 7.495 0 001.5 9c0 1.414.468 2.957 1.137 4.45.672 1.5 1.564 2.988 2.449 4.298a46.985 46.985 0 003.521 4.563l.016.017.004.005.001.002h0L9 22zm0-11a2 2 0 110-4 2 2 0 010 4z" fill="#222" stroke="#fff"></path><path d="M16 28l-.371.335.371.411.371-.41L16 28zm0 0l.371.335h0l.002-.002.004-.005.016-.017a3.037 3.037 0 00.06-.068c.053-.06.13-.147.227-.26a46.982 46.982 0 003.235-4.235c.884-1.31 1.776-2.797 2.448-4.297.669-1.494 1.137-3.037 1.137-4.451 0-4.146-3.354-7.5-7.5-7.5A7.495 7.495 0 008.5 15c0 1.414.468 2.957 1.137 4.45.672 1.5 1.564 2.988 2.448 4.298a46.982 46.982 0 003.522 4.563l.016.017.004.005.001.002h0L16 28zm0-11a2 2 0 110-4 2 2 0 010 4z" fill="#222" stroke="#fff"></path></svg>
+
+
+
