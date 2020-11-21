@@ -52,7 +52,7 @@ function App(){
         
       </Row>
       <Row>
-        <Col xs={0} sm={0} md={{span:7,offset:1}} >
+        <Col xs={0} sm={0} md={{span:8,offset:1}} >
           <FilterBar 
             Shop = {Shop}
             setShop = {setShop}
@@ -61,7 +61,7 @@ function App(){
             Price={data.priceRange}
           />
         </Col>
-        <Col xs={{offset:1,span:22}} sm={{offset:1,span:22}}  md={{span:14,offset:1}} lg={{span:14,offset:1}} xl={{span:14,offset:1}}>
+        <Col xs={{offset:1,span:22}} sm={{offset:1,span:22}}  md={{span:13,offset:1}} lg={{span:14,offset:1}} xl={{span:14,offset:1}}>
           <ListBar Merchants={data.merchants} />
         </Col>
       </Row>
