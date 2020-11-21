@@ -8,10 +8,10 @@ const { Title } = Typography;
 const { Option } = Select;
 const radioStyle = {
     display: 'block',
-    height: '30px',
-    lineHeight: '30px',
+    height: '25px',
+    lineHeight: '25x',
+    
 };
-
 function SubCategory({Shop2,setShop2,Cate}){
 
     const onChange = e => {
@@ -24,12 +24,12 @@ function SubCategory({Shop2,setShop2,Cate}){
             <Col span={24}>
                 <Title level={5}>ประเภทร้านค้า</Title>
             </Col>
-            <Col span={24}>
+            <Col span={24} style={{width:"100px"}} >
                 <Radio.Group onChange={onChange} defaultValue={-1}>
                     <Radio key={-1} style={radioStyle} value={-1}>ทั้งหมด</Radio>
                     {
                         Cate[Shop2.category].subcategories.map((item,index)=>
-                        <Radio style={radioStyle} key={index} value={index}>{item}</Radio>
+                        <Radio style={radioStyle} key={index} value={index}><font className="textKung">{item}</font></Radio>
                         )
                     }
                 </Radio.Group>          
@@ -96,7 +96,7 @@ function FilterBar({Provinces,Categories,Price,Shop,setShop}){
                 </Col>
             </Row>
 
-            <Row style={{ marginBottom: 16 }}>
+            <Row style={{ marginBottom: 16}}>
                 <Col span={24}>
                     <Title level={5}>ราคา</Title>
                 </Col>

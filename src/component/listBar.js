@@ -118,7 +118,7 @@ function ListBar({Merchants,Shop}){
                 })
             }
             <Row>
-                <Col offset={7} span={10} style={{width:"100%",fontFamily:"IBM Plex Sans Thai",marginTop:"20px",borderRadius:"5px"}}>
+                <Col xs={{offset:2,span:20}} sm={{offset:2,span:20}} md={{offset:7,span:10}} style={{width:"100%",fontFamily:"IBM Plex Sans Thai",marginTop:"20px",borderRadius:"5px"}}>
                     <Button  size="large" block>ดูเพิ่มเติม</Button>
                 </Col>
             </Row>

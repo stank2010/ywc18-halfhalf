@@ -42,7 +42,7 @@ function App(){
         Categories={data.categories} 
       />
       <BreadBar />
-      <Row style={{ marginTop: 16 }}>
+      <Row style={{ marginTop: 16 ,marginBottom:16}}>
         <Col 
           style={{fontFamily: "IBM Plex Sans Thai"}} 
           offset={1}

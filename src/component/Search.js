@@ -44,7 +44,7 @@ function SearchBar({Provinces,Categories}){
           placeholder=""
           options={
               Categories.map(item=>{
-                return {value:<font className="fontMan">{item.name}</font>};
+                return {label:<font className="fontMan">{item.name}</font> ,value:item.name};
               })
           }
         >
@@ -60,7 +60,7 @@ function SearchBar({Provinces,Categories}){
             placeholder=""
             options={
                 Categories.map(item=>{
-                  return {value:<font className="fontMan">{item.name}</font>};
+                  return {label:<font className="fontMan">{item.name}</font> ,value:item.name};
                 })
             }
           >
