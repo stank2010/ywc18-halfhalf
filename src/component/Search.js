@@ -54,28 +54,27 @@ function SearchBar({Provinces,Categories}){
       </Col>
 
       <Col xs={20} sm={20} md={0} lg={0} xl={0}>
-      <Input.Group compact>        
-        <AutoComplete
-          style={{ width: '90%'}}
-          placeholder=""
-          options={
-              Categories.map(item=>{
-                return {value:<font className="fontMan">{item.name}</font>};
-              })
-          }
-          
-        >
-          <Input 
-            size="large" 
-            placeholder="ค้นหา ชื่อ ร้านอาหาร และเครื่องดื่ม ร้านธงฟ้า ร้านค้า OTOP และสินค้าทั่วไป" 
-            suffix={<SearchOutlined/>} 
-            style={{borderTopLeftRadius:"10px",borderBottomLeftRadius:"10px"}}
+        <Input.Group compact>        
+          <AutoComplete
+            style={{ width:'80%'}}
+            placeholder=""
+            options={
+                Categories.map(item=>{
+                  return {value:<font className="fontMan">{item.name}</font>};
+                })
+            }
           >
+            <Input 
+              size="large" 
+              placeholder="ค้นหา ชื่อ ร้านอาหาร และเครื่องดื่ม ร้านธงฟ้า ร้านค้า OTOP และสินค้าทั่วไป" 
+              suffix={<SearchOutlined/>} 
+              style={{borderTopLeftRadius:"10px",borderBottomLeftRadius:"10px"}}
+            >
 
-            </Input>
-        </AutoComplete>
-        <img src={Filter_Kung} className="filterKung"/>
-      </Input.Group>         
+              </Input>
+          </AutoComplete>
+          <img src={Filter_Kung} className="filterKung"/>
+        </Input.Group>         
       </Col>
     </Row>
   );
